@@ -12,9 +12,9 @@ title                    : "Pratik Doshi"
 title_separator          : "-"
 name                     : &name "Pratik Doshi"
 description              : &description "MS CSE @UCSC"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://pratik-doshi-99.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "Pratik-Doshi-99/pratik-doshi-99.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -26,7 +26,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "MS CSE @UCSC"
   location         : "Santa Cruz"
-  employer         : "University of California, Santa Cruz"
+  employer         : "UC Santa Cruz"
   uri              : # URL
   email            : "pratikdoshi99@gmail.com" 
 
@@ -48,7 +48,7 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : #"bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
