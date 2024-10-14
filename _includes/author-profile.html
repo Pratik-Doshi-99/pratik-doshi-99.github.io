@@ -73,9 +73,6 @@
       {% if author.github %}
         <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>Github</a></li>
       {% endif %}
-      {% if author.huggingface %}
-        <li><a href="https://huggingface.co/{{ author.huggingface }}">🤗 HuggingFace</a></li>
-      {% endif %}
       {% if author.kaggle %}
         <li><a href="https://kaggle.com/{{ author.kaggle }}"><i class="fab fa-fw fa-kaggle icon-pad-right" aria-hidden="true"></i>Kaggle</a></li>
       {% endif %}      
@@ -155,7 +152,10 @@
       {% endif %}
       {% if author.zhihu %}
       <li><a href="htps://www.zhihu.com/people/{{ author.zhihu }}"><i class="fab fa-fw fa-zhihu icon-pad-right" aria-hidden="true"></i>Zhihu</a></li>
-      {% endif %}      
+      {% endif %}
+      {% if author.huggingface %}
+        <li><a href="https://huggingface.co/{{ author.huggingface }}">🤗 HuggingFace</a></li>
+      {% endif %}  
     </ul>
   </div>
 </div>
