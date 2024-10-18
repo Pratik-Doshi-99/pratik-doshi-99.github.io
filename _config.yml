@@ -25,7 +25,7 @@ author:
   name             : "Pratik Doshi"
   pronouns         : # example: "she/her"  
   bio              : "MS CSE @UCSC"
-  location         : "Santa Cruz"
+  location         : "California"
   employer         : "UC Santa Cruz"
   uri              : # URL
   email            : "pratikdoshi99@gmail.com" 
@@ -43,8 +43,8 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "https://github.com/Pratik-Doshi-99/"
-  huggingface      : "https://huggingface.co/pratikdoshi"
+  github           : "Pratik-Doshi-99/"
+  huggingface      : "pratikdoshi"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -58,7 +58,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "https://www.linkedin.com/in/pratik-doshi-b2a493153/"
+  linkedin         : "pratik-doshi-b2a493153"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
