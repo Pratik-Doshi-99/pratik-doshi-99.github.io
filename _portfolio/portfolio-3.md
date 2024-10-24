@@ -12,7 +12,7 @@ This app is a customizable one-stop shop for managing and reconciling financial 
 ![Image 1](/images/tt_entry.png)
 _Data Entry Interface_
 
-![Image 2](/images/tt_openpos.png)
+![Image 2](/images/tt_openpos2.png)
 _Portfolio Monitoring_
 
 ![Image 3](/images/tt_admin.png)
