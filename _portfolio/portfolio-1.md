@@ -1,6 +1,6 @@
 ---
 title: "Beyong Lang"
-excerpt: "Voice calling with real-time speech translation<br/><img src='/images/voiceapp_simultaneous.png'>"
+excerpt: "Voice calling with real-time speech translation<br/><br/><img src='/images/voiceapp_simultaneous.png'>"
 collection: portfolio
 ---
 

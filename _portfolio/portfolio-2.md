@@ -1,6 +1,6 @@
 ---
 title: "Minimizing Power Plant Externalities"
-excerpt: "Using simulations to determine optimum power plant location<br/><img src='/images/pollution_exposure.png'>"
+excerpt: "Using simulations to determine optimum power plant location<br/><br/><img src='/images/pollution_exposure.png'>"
 collection: portfolio
 ---
 
