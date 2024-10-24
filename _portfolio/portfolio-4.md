@@ -1,6 +1,6 @@
 ---
 title: "Volatility Prediction in Financial Markets"
-excerpt: "A new method of forecasting volatility in financial markets<br/><img src='/images/symmetry.png'>"
+excerpt: "A new method of forecasting volatility in financial markets<br/><img src='/images/symmetry2.png'>"
 collection: portfolio
 ---
 
