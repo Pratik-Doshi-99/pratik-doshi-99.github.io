@@ -1,7 +1,7 @@
 ---
 title: 'Review: A Mathematical Framework for Transformer Circuits'
 date: 2024-10-25
-permalink: /posts/2012/08/transformer-circuits/
+permalink: /posts/transformer-circuits/
 tags:
   - Mechanistic Interpretability
   - Circuits
