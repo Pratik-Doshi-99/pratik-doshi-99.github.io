@@ -1,21 +1,11 @@
 ---
-title: "Beyong Lang"
-excerpt: "Voice calling with real-time speech translation<br/><br/><img src='/images/voiceapp_simultaneous.png'>"
+title: "Predicting AI bias using SAEs"
+excerpt: "A comparative analysis of Sparse Autoencoders and MLP Activations<br/><br/><img src='/images/sae_mlp.png'>"
 collection: portfolio
 ---
 
-This app allows two users to connect over a voice call. Both the users can choose a language of their choice. The app uses Speech AI to translate the voice of each of the participants in the other's language. This app allows individuals speaking different langiages to interact in real-time.
+A comprative analysis of Sparse Autoencoders and MLP Activations using Linear Probing and Statistical Analysis to understand how they encode gender. Trained the SAE from scratch on Tiny-Stories-21M abd used a synthetic gender-annotated dataset to capture their activations at inference-time.
 
-**Tech Stack:** Python, JavaScript, WebRTC, WebSockets, Azure AI
+**Tech Stack:** Python, TransformerLens, SAELens, PyTorch
 
-View live demo [here.](https://dev1.antizerotechnologies.com/voicedemo5/start)
-
-
-![Image 1](/images/voiceapp_simultaneous.png)
-_Jaisal (left) speaks in Enlish, Pratik (right) speaks in Hindi._
-
-![Image 2](/images/voiceapp_meet.png)
-_Single user view_
-
-![Image 3](/images/voiceapp_entry.png)
-_Landing page_
+Detailed report and code [here.](https://github.com/Pratik-Doshi-99/SAE-MLP-Analysis)
