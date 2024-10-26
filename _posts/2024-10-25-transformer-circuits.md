@@ -44,6 +44,7 @@ Packing more features than there are dimensions. Clearly, those features cant be
 ![Attention Visual](/images/blogs/attention_visual.png)
 
 [Download File here.](https://pratik-doshi-99.github.io/files/attention_visual.xlsx)
+
 4. We now have a matrix _(d_head * sequence)_ for each head.
    * **From first principles**, a separate output matrix _(d_model * d_head)_ for each head is used to project these matrices _(d_head * sequence)_ back to the residual stream dimensions _(d_model * sequence)_. Finally all of them are added to the residual stream individually. These output matrices (1 per head) are learnable.
    * **In practice**, you concatenate these matrices _(d_head * sequence)_ one below the other to arrive at the final matrix _(d_model * sequence)_ [Note that: _d_head = d_model / num_heads_]. This concatenated matrix is multiplied by a learnable output matrix _(d_model * d_model)_ and the result is added back to the residual stream. This variant is mathematically equivalent and computationally better.
