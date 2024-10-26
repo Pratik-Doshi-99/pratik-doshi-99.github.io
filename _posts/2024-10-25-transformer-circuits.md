@@ -39,11 +39,11 @@ Packing more features than there are dimensions. Clearly, those features cant be
 
 1. An attention layer is a sum of individual attention heads working independently and parallel to each other. Each attention head focuses on a subspace of the residual stream for all the tokens in the given sequence.
 2. Inside a single head: For each token, that head learns a probability distribution over that and all previous tokens. This probability distribution (per token) serves as the weights (importance of the context of each of the previous tokens for the current token). The weights are normalized using softmax. Each row adds up to 1.
-3. Each of the weights are multiplied by the respective value vector of that token, and finally summed, to arrive at the final weighted-average value vector (per token).
+3. Each of the weights are multiplied by the respective value vector of that token, and finally summed, to arrive at the final weighted-average value vector (per token). 
 
-![Attention Visual](/images/blogs/attention_visual.png)
+    ![Attention Visual](/images/blogs/attention_visual.png)
 
-[Download File here.](https://pratik-doshi-99.github.io/files/attention_visual.xlsx)
+    [Download File here.](https://pratik-doshi-99.github.io/files/attention_visual.xlsx)
 
 4. We now have a matrix _(d_head * sequence)_ for each head.
    * **From first principles**, a separate output matrix _(d_model * d_head)_ for each head is used to project these matrices _(d_head * sequence)_ back to the residual stream dimensions _(d_model * sequence)_. Finally all of them are added to the residual stream individually. These output matrices (1 per head) are learnable.
