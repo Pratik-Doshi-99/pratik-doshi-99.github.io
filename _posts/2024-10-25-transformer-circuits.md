@@ -11,8 +11,6 @@ tags:
 ---
 
 
-# Review: A Mathematical Framework for Transformer Circuits
-
 ### General Notes
 1. The paper gives a nice mental model to think about transformers and attention heads. This is helpful in reasoning about big models.
 
