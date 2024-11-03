@@ -93,15 +93,15 @@ Batch multiplication using the “@” operator enables batch matrix multiplicat
 ### Computing the Attention Pattern
 The attention pattern is derived by computing the dot product of the query and key vectors. To maintain the autoregressive property of the model—ensuring that when predicting the \\(t+1\\) token, the \\(t+2\\) token is not utilized—we can use all tokens up to \\(t\\).
 
-In matrix terms, the query matrix has dimensions \((\text{time}, \text{embedding dimensions})\), while the key matrix also has dimensions \((\text{time}, \text{embedding dimensions})\). The attention pattern is computed by multiplying the query vectors with the key vectors as follows:
+In matrix terms, the query matrix has dimensions \\((\text{time}, \text{embedding dimensions})\\), while the key matrix also has dimensions \\((\text{time}, \text{embedding dimensions})\\). The attention pattern is computed by multiplying the query vectors with the key vectors as follows:
 
-\[
+\\[
 \text{attention pattern} = q \times k^T
-\]
+\\]
 
-For instance, if the context length is 8 and embedding dimensions are 16, both \(q\) and \(k\) would have dimensions of \((8, 16)\), and \(k^T\) would be \((16, 8)\). Each column of \(k^T\) represents an embedding, and the number of columns determines the context.
+For instance, if the context length is 8 and embedding dimensions are 16, both \\(q\\) and \\(k\\) would have dimensions of \\((8, 16)\\), and \\(k^T\\) would be \\((16, 8)\\). Each column of \\(k^T\\) represents an embedding, and the number of columns determines the context.
 
-The operation \(q @ k^T\) results in a matrix of dimensions \((B, T, T)\), where each row represents the dot product of a single token query with all other token keys. To preserve the autoregressive property, all elements above the principal diagonal are masked to \(-\infty\). This masking ensures that when the softmax is applied across the rows, these elements become zero.
+The operation \\(q @ k^T\\) results in a matrix of dimensions \\((B, T, T)\\), where each row represents the dot product of a single token query with all other token keys. To preserve the autoregressive property, all elements above the principal diagonal are masked to \\(-\infty\\). This masking ensures that when the softmax is applied across the rows, these elements become zero.
 
 For efficiency on the GPU, the operation is executed in PyTorch as follows:
 
@@ -111,12 +111,12 @@ q @ k.transpose(-2, -1)  # (B, T, 16) @ (B, 16, T) → (B, T, T)
 
 In this notation, each row of the resulting matrix represents the dot product of
 
- a token query with all token keys. Let's denote this matrix as \(wei\).
+ a token query with all token keys. Let's denote this matrix as \\(wei\\).
 
-Afterward, the row-wise softmax is applied to the \(wei\) matrix, resulting in the attention pattern. The output matrix for the attention head is then computed as:
+Afterward, the row-wise softmax is applied to the \\(wei\\) matrix, resulting in the attention pattern. The output matrix for the attention head is then computed as:
 
 ```python
 output = wei @ v  # (B, T, T) @ (B, T, 16) → (B, T, C)
 ```
 
-Here, \(v\) represents the value matrix corresponding to the key. The resulting output matrix retains dimensions \((B, T, C)\).
+Here, \\(v\\) represents the value matrix corresponding to the key. The resulting output matrix retains dimensions \\((B, T, C)\\).
