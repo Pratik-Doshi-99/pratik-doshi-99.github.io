@@ -91,7 +91,7 @@ The `@torch.no_grad()` context is defined for a function, indicating that the fu
 Batch multiplication using the “@” operator enables batch matrix multiplication with triangular matrices for weighted sums.
 
 ### Computing the Attention Pattern
-The attention pattern is derived by computing the dot product of the query and key vectors. To maintain the autoregressive property of the model—ensuring that when predicting the \(t+1\) token, the \(t+2\) token is not utilized—we can use all tokens up to \(t\).
+The attention pattern is derived by computing the dot product of the query and key vectors. To maintain the autoregressive property of the model—ensuring that when predicting the \\(t+1\\) token, the \\(t+2\\) token is not utilized—we can use all tokens up to \\(t\\).
 
 In matrix terms, the query matrix has dimensions \((\text{time}, \text{embedding dimensions})\), while the key matrix also has dimensions \((\text{time}, \text{embedding dimensions})\). The attention pattern is computed by multiplying the query vectors with the key vectors as follows:
 
