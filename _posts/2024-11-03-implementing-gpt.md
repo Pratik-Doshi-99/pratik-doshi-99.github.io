@@ -9,7 +9,7 @@ tags:
   - Transformers
 ---
 
-This article contains a conceptual explanation necessary for building a language model from scratch, using the decoder-only transformer architecture. It is based on Andrej's Karpathys [GPT from scratch](https://youtu.be/kCc8FmEb1nY?si=Rdc_bMOWquUdAUJ5). The code for this conceptual guide can be found [here.](https://github.com/Pratik-Doshi-99/mini-gpt)
+This article contains a conceptual explanation, necessary for building a language model from scratch, using the decoder-only transformer architecture. It is based on Andrej's Karpathys [GPT from scratch](https://youtu.be/kCc8FmEb1nY?si=Rdc_bMOWquUdAUJ5). The code for this conceptual guide can be found [here.](https://github.com/Pratik-Doshi-99/mini-gpt)
 
 
 <!--
