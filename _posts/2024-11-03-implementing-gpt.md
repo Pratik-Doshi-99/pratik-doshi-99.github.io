@@ -9,7 +9,7 @@ tags:
   - Transformers
 ---
 
-My implementation of Andrej's Karpathys [GPT from scratch](https://youtu.be/kCc8FmEb1nY?si=Rdc_bMOWquUdAUJ5).
+This article contains conceptual explainations necessary for building a language model from scratch, using the decoder-only transformer architecture. It is based on Andrej's Karpathys [GPT from scratch](https://youtu.be/kCc8FmEb1nY?si=Rdc_bMOWquUdAUJ5). The code for this conceptual guide can be found [here.](https://github.com/Pratik-Doshi-99/mini-gpt)
 
 
 <!--
@@ -18,7 +18,7 @@ Original Notes: https://docs.google.com/document/d/1pO4NgBASUFp5qJaIMCmLURGAzvip
 -->
 
 ## Tokenization and Vocabulary
-- Google utilizes SentencePiece for tokenization, while OpenAI employs tiktoken.
+- Google utilizes [Sentence Piece](https://github.com/google/sentencepiece) for tokenization, while OpenAI employs [tiktoken](https://github.com/openai/tiktoken).
 - Tokenization operates on a vocabulary: the longer the vocabulary, the shorter the individual encodings, and vice versa.
   
 ## Tokenization and Autoregressive Training
@@ -120,3 +120,9 @@ output = wei @ v  # (B, T, T) @ (B, T, 16) → (B, T, C)
 ```
 
 Here, \\(v\\) represents the value matrix corresponding to the key. The resulting output matrix retains dimensions \\((B, T, C)\\).
+
+
+## References
+
+1. [Andrej Karpathy's GPT Walkthrough](https://youtu.be/kCc8FmEb1nY?si=Rdc_bMOWquUdAUJ5)
+2. [Code Implementation of this Article](https://github.com/Pratik-Doshi-99/mini-gpt)
