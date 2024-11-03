@@ -1,7 +1,7 @@
 ---
 title: 'Implementing GPT from Scratch'
 date: 2024-10-30
-permalink: /posts/implementing-gpt.md/
+permalink: /posts/implementing-gpt/
 tags:
   - Language Models
   - Autoregressive Training
