@@ -10,6 +10,8 @@ tags:
   - Transformers
 ---
 
+A paper review highlighting the key discoveries with respect to attention heads and the algorithms used.
+
 <!--
 Original Content
 A paper review highlighting the key discoveries with respect to attention heads and the algorithm used for the discovery.

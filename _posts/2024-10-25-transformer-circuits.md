@@ -10,6 +10,10 @@ tags:
   - Transformers
 ---
 
+
+
+This paper provides a mental model for reasoning about the internal workings of transformers and attention heads in deep neural networks. The insights here help understand and analyze the behaviors of large models.
+
 <!--
 Original Content
 A paper review of [A Mathematical Framework for Transformer Circuits](https://transformer-circuits.pub/2021/framework/index.html), to build strong mental models that can be used to reason about the internal functioning of deep neural networks.
@@ -121,9 +125,6 @@ QK is
 
 
 <!--AI Modified-->
-
-
-This paper provides a mental model for reasoning about the internal workings of transformers and attention heads in deep neural networks. The insights here help understand and analyze the behaviors of large models.
 
 ---
 
