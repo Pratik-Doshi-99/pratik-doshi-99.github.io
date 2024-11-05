@@ -1,5 +1,5 @@
 ---
-title: "Beyong Lang"
+title: "Beyond Lang"
 excerpt: "Voice calling with real-time speech translation<br/><br/><img src='/images/voiceapp_simultaneous.png'>"
 collection: portfolio
 ---
