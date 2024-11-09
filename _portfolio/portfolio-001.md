@@ -1,6 +1,6 @@
 ---
 title: "Predicting AI bias using SAEs"
-excerpt: "A comparative analysis of Sparse Autoencoders and MLP Activations<br/><br/><img src='/images/sae_mlp.png'>"
+excerpt: "A comparative analysis of how Sparse Autoencoders and MLP activations encode gender information inside LLMs.<br/><br/><img src='/images/sae_mlp.png'>"
 collection: portfolio
 ---
 

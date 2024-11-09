@@ -1,6 +1,6 @@
 ---
 title: "Web-based Accounting System"
-excerpt: "One-stop shop for managning and reconciling financial trades<br/><br/><img src='/images/tt_entry.png'>"
+excerpt: "One-stop shop for managning and reconciling financial trades.<br/><br/><img src='/images/tt_entry.png'>"
 collection: portfolio
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Automatic Summarization of Job Description with LLMs"
-excerpt: "A workflow to fetch and summarize job descriptions with Llama 3-70B<br/><br/><img src='/images/jd_flow.png'>"
+excerpt: "A workflow to fetch and summarize job descriptions with Llama 3-70B.<br/><br/><img src='/images/jd_flow.png'>"
 collection: portfolio
 ---
 

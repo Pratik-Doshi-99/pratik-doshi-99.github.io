@@ -1,6 +1,6 @@
 ---
 title: "Volatility Prediction in Financial Markets"
-excerpt: "A new method of forecasting volatility in financial markets<br/><br/><img src='/images/symmetry2.png'>"
+excerpt: "Using an ensemble of GARCH to predict financial volatility with greater accuracy.<br/><br/><img src='/images/symmetry2.png'>"
 collection: portfolio
 ---
 

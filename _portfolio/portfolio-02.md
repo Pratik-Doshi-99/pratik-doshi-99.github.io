@@ -1,6 +1,6 @@
 ---
 title: "Transfer Learning for Image Classification"
-excerpt: "Fine-tuning ViT and ResNet for Image Classification tasks<br/><br/><img src='/images/vit.png'>"
+excerpt: "Fine-tuning ViT and ResNet for image classification on Google Cloud.<br/><br/><img src='/images/vit.png'>"
 collection: portfolio
 ---
 
