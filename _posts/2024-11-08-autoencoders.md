@@ -50,6 +50,8 @@ To evaluate the denoising performance of different autoencoder architectures, we
 
 ![synthetic Data](/images/blogs/autoencoder_data.png)
 
+*From top to bottom, the signal gets more noisy (denoted by the level of alpha). Each column represents an individual sample.*
+
 ## Autoencoder Model
 
 The denoising model is an autoencoder architecture that leverages 1-dimensional convolutional layers to process 1-D time-series data. The model structure includes:
@@ -68,7 +70,7 @@ The denoising model is an autoencoder architecture that leverages 1-dimensional 
 
 ![Unet](/images/blogs/unet.png)
 
-*U-NET Architecture. This project's architecture is similar but doesnt have skip connections and uses 1-D convolution filters instead of the 2-D ones shown above*
+*[Source](https://towardsdatascience.com/u-net-explained-understanding-its-image-segmentation-architecture-56e4842e313a). U-NET Architecture. This project's architecture is similar but doesnt have skip connections and uses 1-D convolution filters instead of the 2-D ones shown above.*
 
 ## Dataset Split
 
@@ -90,7 +92,12 @@ To study the impact of model depth on denoising performance, we trained autoenco
 
 
 ![training](/images/blogs/autoencoder_val_loss.png)
+
+*Validation loss across different noise levels. The deeper the model, the worse the denoising.*
+
 ![output](/images/blogs/denoise_eg.png)
+
+*Plotting the noise in the model's output (model output - base signal) and the corrupted sample (corrupted sample - base signal) to understand how much noise was removed by the model.*
 
 The trained models’ performance was compared by evaluating the validation loss for each depth configuration across different noise levels. This analysis helps to identify the optimal depth configuration that best generalizes across varying noise intensities, balancing complexity and denoising ability.
 
