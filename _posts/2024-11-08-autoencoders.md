@@ -48,7 +48,7 @@ To evaluate the denoising performance of different autoencoder architectures, we
 
   For each value of \\( \alpha \\), a separate dataset is created, maintaining a constant base signal \\( f(x) \\) across different noise levels. This setup allows us to assess the denoising capability of each autoencoder configuration by comparing results on datasets with varying noise intensities.
 
-
+![synthetic Data](/images/blogs/autoencoder_data.png)
 
 ## Autoencoder Model
 
@@ -66,7 +66,9 @@ The denoising model is an autoencoder architecture that leverages 1-dimensional 
   
   This architecture is inspired by the U-Net model but modified to use 1-D convolutions for handling time-series data instead of 2-D convolutions used for image data. Unlike a traditional U-Net, the autoencoder we use here omits skip connections, which may be beneficial for complex structures but might be unnecessary for a relatively simple denoising task.
 
+![Unet](/images/blogs/unet.png)
 
+*U-NET Architecture. This project's architecture is similar but doesnt have skip connections and uses 1-D convolution filters instead of the 2-D ones shown above*
 
 ## Dataset Split
 
@@ -85,6 +87,10 @@ To study the impact of model depth on denoising performance, we trained autoenco
 - **Training Process**:
   - For each combination of depth and noise level, the model was trained independently. This led to a total of \\( \text{number of depth configurations} \times \text{number of noise levels} \\) models.
   - The loss was computed by taking the mean squared error (MSE) between the model’s output and the corresponding base signal for each sample, ensuring that the model learned to reconstruct the original signal.
+
+
+![training](/images/blogs/autoencoder_val_loss.png)
+![output](/images/blogs/denoise_eg.png)
 
 The trained models’ performance was compared by evaluating the validation loss for each depth configuration across different noise levels. This analysis helps to identify the optimal depth configuration that best generalizes across varying noise intensities, balancing complexity and denoising ability.
 
