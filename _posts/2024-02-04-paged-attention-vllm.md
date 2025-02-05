@@ -9,12 +9,11 @@ tags:
   - KV Cache
 ---
 
-
-# Paged Attention and the Design of vLLM
-
-Paged attention is an innovative approach inspired by the concepts of virtual memory and page tables in operating systems. vLLM builds on this idea to efficiently manage memory during inference. The true magic of paged attention lies in how it stores the KV cache in memory, ensuring optimal memory usage and high performance.
+Paged Attention is a memory optimization on which the vLLM Inference Engine is based. Here is a summary of the [paper](https://arxiv.org/pdf/2309.06180) on paged attention and the key features of vLLM that make it so powerful.
 
 ## Introduction
+
+Paged attention is an innovative approach inspired by the concepts of virtual memory and page tables in operating systems. vLLM builds on this idea to efficiently manage memory during inference. The true magic of paged attention lies in how it stores the KV cache in memory, ensuring optimal memory usage and high performance.
 
 Large language models (LLMs) operate in two phases: **prefill** and **decoding**. In the prefill phase, the model computes key (K) and value (V) vectors and caches them for later use during the decoding phase. This cached data, known as the **KV cache**, plays a crucial role in generating responses.
 
